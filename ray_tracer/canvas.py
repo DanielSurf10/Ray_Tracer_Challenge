@@ -9,7 +9,8 @@ class Canvas:
 		self.pixels = [color.Color(0, 0, 0) for _ in range(width * height)]
 
 	def write_pixel(self, x, y, color):
-		self.pixels[x + y * self.width] = color
+		if 0 <= x < self.width and 0 <= y < self.height:
+			self.pixels[x + y * self.width] = color
 
 # 	def __getitem__(self, index):
 # 		start = index * self.width
