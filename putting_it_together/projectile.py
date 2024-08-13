@@ -1,6 +1,3 @@
-import sys
-sys.path.append('/home/daniel/Documentos/GitHub/Ray_Tracer_Challenge')
-
 from ray_tracer import tuple
 
 
